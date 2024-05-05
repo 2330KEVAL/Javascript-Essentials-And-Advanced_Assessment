@@ -1,0 +1,24 @@
+<script>
+    function arrayToCountObject(arr) {
+    let countObj = {};
+
+    arr.forEach(element => {
+        
+        if (countObj[element]) {
+            countObj[element]++;
+        } else {
+         
+            countObj[element] = 1;
+        }
+    });
+
+    
+    return countObj;
+}
+
+
+console.log(arrayToCountObject([1, 2, 2, 3])); 
+console.log(arrayToCountObject([9, 9, 9, 99])); 
+console.log(arrayToCountObject([4, 3, 2, 1]));
+
+</script>
